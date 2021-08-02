@@ -7,6 +7,10 @@ import client from "../../client";
          where: {
            userId,
          },
+         include: {
+           following: true,
+           followers: true,
+         }
        });
     },
    },
