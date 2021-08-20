@@ -13,11 +13,11 @@ Instaclone Backend.
 [✅] Unfollow User
 [✅] See Followers w/ Pagination
 [✅] See Following w/ Pagination
-[ ] Follow User
-[ ] Unfollow User
-[ ] Search Users
-[ ] See Followers
-[ ] See Following
+[✅] Follow User
+[✅] Unfollow User
+[✅] Search Users
+[✅] See Followers
+[✅] See Following
 
  ## Photos
 

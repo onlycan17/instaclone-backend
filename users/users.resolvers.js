@@ -2,7 +2,7 @@ import client from "../client";
 
 export default{
     User: {
-        totalFollowing: (root) =>
+        totalFollowing: ({id}) =>
             client.user.count({
                 where: {
                     followers:{
@@ -26,6 +26,23 @@ export default{
             if(!loggedInUser){
                 return false;
             }
+            return id === loggedInUser.id;
+        },
+        isFollowing: async ({ id }, _, { loggedInUser }) => {
+            if(!loggedInUser){
+                return false;
+            }
+            const exists = await client.user.count({
+                where:{
+                    userId: loggedInUser.userId,
+                    following: {
+                        some: {
+                            id,
+                        },
+                    },
+                },
+            });
+            return Boolean(exists);    
         },
     },
 };
