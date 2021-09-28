@@ -26,8 +26,8 @@ Instaclone Backend.
 [✅] See Hashtags
 [✅] Search Photos
 [✅] Edit Photo
-[ ] Like / Unlike Photo
-[ ] See Photo Likes
+[✅] Like / Unlike Photo
+[✅] See Photo Likes
 [ ] See Feed
 
  ## Comments
