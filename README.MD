@@ -28,10 +28,16 @@ Instaclone Backend.
 [✅] Edit Photo
 [✅] Like / Unlike Photo
 [✅] See Photo Likes
-[ ] See Feed
+[✅] See Feed
+[✅] See Photo Comments
+[ ] Is Mine (Delete Photo)
 
  ## Comments
 
-[ ] Comment on Photo
-[ ] Edit Comment
+[✅] Comment on Photo
 [ ] Delete Comment
+[ ] Edit Comment
+
+## Extras
+
+[ ] S3 Image Upload
