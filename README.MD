@@ -30,14 +30,24 @@ Instaclone Backend.
 [✅] See Photo Likes
 [✅] See Feed
 [✅] See Photo Comments
-[ ] Is Mine (Delete Photo)
+[✅] Delete Photo
 
  ## Comments
 
 [✅] Comment on Photo
-[ ] Delete Comment
-[ ] Edit Comment
+[✅] Delete Comment
+[✅] Edit Comment
+
+## Refactor
+[✅] Mutation Response
 
 ## Extras
+[✅] S3 Image Upload
 
-[ ] S3 Image Upload
+## DMs
+- [✅] See Rooms
+- [✅] Send Message (Create Room)
+- [✅] See Room
+- [✅] Computed Fields
+- [✅] Send (Read) Message
+- [ ] Realtime Messages
