@@ -24,8 +24,8 @@ model User {
   following User[]    @relation("FollowRelation", references: [id])
   comments  Comment[]
   rooms     Room[]
-  createAt  DateTime  @default(now())
-  updateAt  DateTime  @updatedAt
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
   message   Message[]
 }
 
@@ -37,7 +37,7 @@ model Photo {
   caption   String?
   hashtags  Hashtag[]
   createdAt DateTime  @default(now())
-  updateAt  DateTime  @updatedAt
+  updatedAt  DateTime  @updatedAt
   likes     Like[]
   comments  Comment[]
 }
@@ -57,7 +57,7 @@ model Like {
   photoId   Int
   userId    Int
   createdAt DateTime @default(now())
-  updateAt  DateTime @updatedAt
+  updatedAt  DateTime @updatedAt
 
   @@unique([photoId, userId])
 }

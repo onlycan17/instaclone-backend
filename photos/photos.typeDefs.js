@@ -10,8 +10,8 @@ export default gql`
         commentNumber: Int!
         comments: [Comment]
         hashtags: [Hashtag]
-        createAt: String!
-        updateAt: String!
+        createdAt: String!
+        updatedAt: String!
         isMine: Boolean!
         isLiked: Boolean!
     }
