@@ -1,6 +1,6 @@
 import { async } from "regenerator-runtime";
 import client from "../../client";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 
 
@@ -16,7 +16,7 @@ export default {
                 error: "User not found.",
             };
         }
-        const passwordOk = await bcrypt.compare(password,user.password);
+        const passwordOk = await bcrypt.compareSync(password,user.password);
         if(!passwordOk){
             return {
                 ok: false,

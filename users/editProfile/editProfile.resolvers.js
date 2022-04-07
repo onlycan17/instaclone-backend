@@ -1,4 +1,4 @@
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import {createWriteStream} from "fs";
 import client from "../../client";
 import { protectedResolver } from "../users.utils";
@@ -10,7 +10,9 @@ const resolverfn = async (
   { loggedInUser }
 ) => {
   let avatarUrl = null;
-  console.log(avatar);
+
+  console.log('----test----');
+  console.log(bio,avatar);
   if(avatar){
     console.log('avatarIn!');
     avatarUrl = await uploadToS3(avatar, loggedInUser.id, "avatars");
@@ -26,7 +28,7 @@ const resolverfn = async (
   console.log(avatarUrl);
   let uglyPassword = null;
   if (newPassword) {
-    uglyPassword = await bcrypt.hash(newPassword, 10);
+    uglyPassword = await bcrypt.hashSync(newPassword, 10);
   }
   const updatedUser = await client.user.update({
     where: {
