@@ -1,6 +1,8 @@
-# Instaclone
+# 인스타그램 클론코딩 사이드 프로젝트
 
-Instaclone Backend.
+인스타그램 클론코딩 
+--------------------------------
+nodejs, express, rest api, graphql, postesql, aws s3 사용
 
 ## User
 [✅] Create Account
