@@ -2,7 +2,7 @@
 
 인스타그램 클론코딩 
 --------------------------------
-nodejs, express, rest api, graphql, postesql, aws s3 사용
+nodejs, express, apollo, prisma, graphql, postgresql, aws s3 사용
 
 ## User
 [✅] Create Account
